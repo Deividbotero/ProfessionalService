@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: #636363;
+}
+
+header {
+    background-image: url(Imagenes/hero.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left; 
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: aliceblue;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(0, 255, 229);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.content {
+    padding: 150px 150px 0px 0px;
+}
+
+.content h1 {
+    color: aliceblue;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 500px;
+    line-height: 55px;
+}
+
+.content p {
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: rgba(170, 177, 255, 0.3);
+    border: 1px solid rgb(0, 38, 255);
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+.btn-1:hover {
+    background-color: rgb(0, 115, 255);
+}
+
+.Servicios {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+}
+
+.Servicios {
+    padding: 25px;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 20px rgba(21, 0, 255, 0.3);
+}
+
+.Servicios img {
+    margin-top:-0px;
+}
+
+.Servicios h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.Servicios p{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.porfolios {
+    padding: 80px 0px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.porfolios h2 {
+    font-size: 55px;
+}
+
+.porfolio {
+    display: flex;
+    align-items: center;
+}
+
+.porfolio img{
+    width: 350px;
+}
+
+.porfolio-1 {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.porfolio-1 h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.porfolio-1 p{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.porfolio-2 {
+    text-align: left;
+    margin-right: 100px;
+}
+
+.porfolio-2 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.porfolio-2 p{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+
+.btn-2:hover {
+    background-color: rgb(11, 222, 255);
+}
+
+footer{
+    padding: 200px 0px 30px 0px;
+    background-image: url(Imagenes/footer.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-content {
+    display: flex;
+}
+
+.info-service{
+    padding: 35px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    margin: 0px 150px 0px 0px ;
+    color: #000000;
+}
+
+.info-service h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.info-service p{
+    font-size: 16px;
+    color: rgb(121, 121, 121);
+}
+
+.info-txt {
+    margin-left: 35px;
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    margin: 45px 0px;
+    border: 0.5px solid #2b39ff;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.enlaces h3{
+    font-size: 25px;
+}
+
+.enlace {
+    display: flex;
+}
+
+.enlace li a {
+    display: block;
+    margin: 20px;
+    color: white;
+}
+
+.enlace li a:hover {
+    color: rgb(128, 0, 255);
+}
