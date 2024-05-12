@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,13 +8,13 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
-
 }
 
-body{
+body {
     background-color: #636363;
 }
 
+/* Header */
 header {
     background-image: url(Imagenes/hero.svg);
     background-position: center bottom;
@@ -23,7 +23,6 @@ header {
     min-height: 70vh;
     display: flex;
     align-items: center;
-    
 }
 
 .container {
@@ -115,6 +114,7 @@ header {
     background-color: rgb(0, 115, 255);
 }
 
+/* Servicios */
 .Servicios {
     padding: 10px 0px;
     display: flex;
@@ -143,6 +143,7 @@ header {
     font-size: 16px;
 }
 
+/* Porfolios */
 .porfolios {
     padding: 80px 0px;
     text-align: center;
@@ -206,6 +207,7 @@ header {
     background-color: rgb(11, 222, 255);
 }
 
+/* Footer */
 footer{
     padding: 200px 0px 30px 0px;
     background-image: url(Imagenes/footer.svg);
@@ -269,4 +271,30 @@ hr {
 
 .enlace li a:hover {
     color: rgb(128, 0, 255);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .menu label {
+        display: block;
+    }
+    
+    .menu .navbar {
+        display: none;
+    }
+    
+    .menu .navbar ul li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .menu .navbar ul {
+        padding: 20px 0;
+    }
+    
+    .menu .navbar ul li a {
+        display: inline-block;
+        padding: 10px 0;
+    }
 }
