@@ -13,6 +13,7 @@
 body {
     background-color: #636363;
 }
+
 header {
     background-image: url(Imagenes/hero.svg);
     background-position: center bottom;
@@ -99,18 +100,28 @@ header {
 }
 
 .btn-1 {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background-color: #1825d6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    background-color: rgba(170, 177, 255, 0.3);
-    border: 1px solid rgb(0, 38, 255);
-    margin: 35px 10px 0px 0px;
-    padding: 15px 25px;
-    color: rgb(0, 0, 0);
-    border-radius: 25px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 .btn-1:hover {
-    background-color: rgb(0, 115, 255);
+    transform: scale(1.06);
+    opacity: 0.9;
+    background-color: #2ec8e0;
+    color: #ffffff;
 }
+
 
 .Servicios {
     padding: 10px 0px;
@@ -191,18 +202,6 @@ header {
     margin-bottom: 25px;
 }
 
-.btn-2 {
-    display: inline-block;
-    padding: 15px 25px;
-    border-radius: 25px;
-    background-color: rgb(0, 119, 255);
-    color: white;
-}
-
-.btn-2:hover {
-    background-color: rgb(11, 222, 255);
-}
-
 footer{
     padding: 200px 0px 30px 0px;
     background-image: url(Imagenes/footer.svg);
@@ -220,8 +219,9 @@ footer{
     text-align: center;
     background-color: #ffffff;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
-    margin: 0px 150px 0px 0px ;
+    margin: 0px auto ;
     color: #000000;
+    max-width: 600px;
 }
 
 .info-service h2 {
@@ -246,26 +246,52 @@ hr {
 
 .enlaces {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: rgb(255, 255, 255);
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .enlaces h3{
     font-size: 25px;
 }
 
+.enlaces p {
+    text-shadow: 2px 2px 4px;
+    color: 0, 0, 0, 0.5;
+}
+
 .enlace {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.enlace li {
+    list-style: none;
+    margin-bottom: 20px;
 }
 
 .enlace li a {
     display: block;
-    margin: 20px;
+    margin-bottom: 10px;
     color: white;
 }
 
 .enlace li a:hover {
     color: rgb(128, 0, 255);
+}
+
+.enlace img {
+    width: 100px;
+    height: auto;
 }
 
 @media only screen and (max-width: 768px) {
