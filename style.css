@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,9 +8,10 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+
 }
 
-body {
+body{
     background-color: #636363;
 }
 
@@ -22,6 +23,7 @@ header {
     min-height: 70vh;
     display: flex;
     align-items: center;
+    
 }
 
 .container {
@@ -100,28 +102,18 @@ header {
 }
 
 .btn-1 {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    background-color: #1825d6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition-duration: 0.4s;
+    background-color: rgba(170, 177, 255, 0.3);
+    border: 1px solid rgb(0, 38, 255);
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
 }
 
 .btn-1:hover {
-    transform: scale(1.06);
-    opacity: 0.9;
-    background-color: #2ec8e0;
-    color: #ffffff;
+    background-color: rgb(0, 115, 255);
 }
-
 
 .Servicios {
     padding: 10px 0px;
@@ -202,6 +194,18 @@ header {
     margin-bottom: 25px;
 }
 
+.btn-2 {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+
+.btn-2:hover {
+    background-color: rgb(11, 222, 255);
+}
+
 footer{
     padding: 200px 0px 30px 0px;
     background-image: url(Imagenes/footer.svg);
@@ -219,9 +223,8 @@ footer{
     text-align: center;
     background-color: #ffffff;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
-    margin: 0px auto ;
+    margin: 0px 150px 0px 0px ;
     color: #000000;
-    max-width: 600px;
 }
 
 .info-service h2 {
@@ -246,42 +249,21 @@ hr {
 
 .enlaces {
     display: flex;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-}
-
-.enlaces {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    color: rgb(255, 255, 255);
 }
 
 .enlaces h3{
     font-size: 25px;
 }
 
-.enlaces p {
-    text-shadow: 2px 2px 4px;
-    color: 0, 0, 0, 0.5;
-}
-
 .enlace {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.enlace li {
-    list-style: none;
-    margin-bottom: 20px;
 }
 
 .enlace li a {
     display: block;
-    margin-bottom: 10px;
+    margin: 20px;
     color: white;
 }
 
@@ -289,32 +271,103 @@ hr {
     color: rgb(128, 0, 255);
 }
 
-.enlace img {
-    width: 100px;
-    height: auto;
-}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-@media only screen and (max-width: 768px) {
+    .menu .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
     .menu label {
         display: block;
     }
-    
-    .menu .navbar {
-        display: none;
+
+    #menu:checked + .navbar {
+        display: block;
     }
-    
-    .menu .navbar ul li {
-        float: none;
+
+    .header-content {
+        align-items: center;
         text-align: center;
-        width: 100%;
+        padding: 50px 20px;
     }
-    
-    .menu .navbar ul {
-        padding: 20px 0;
+
+    .content {
+        padding: 100px 20px 0px 20px;
     }
-    
-    .menu .navbar ul li a {
-        display: inline-block;
-        padding: 10px 0;
+
+    .content h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .content p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .Servicios {
+        flex-direction: column;
+    }
+
+    .Servicios > .Servicio {
+        flex: 1 1 100%;
+        margin: 20px 0;
+    }
+
+    .porfolio {
+        flex-direction: column;
+    }
+
+    .porfolio img {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .info-content {
+        flex-direction: column;
+    }
+
+    .info-service {
+        margin: 20px 0;
+        flex: 1 1 100%;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlace {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .content p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .porfolio-1 h3, .porfolio-2 h3 {
+        font-size: 25px;
+    }
+
+    .porfolio-1 p, .porfolio-2 p {
+        font-size: 16px;
     }
 }
