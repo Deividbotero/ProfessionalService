@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +8,9 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
-
 }
 
-body{
+body {
     background-color: #636363;
 }
 
@@ -23,7 +22,6 @@ header {
     min-height: 70vh;
     display: flex;
     align-items: center;
-    
 }
 
 .container {
@@ -48,9 +46,13 @@ header {
     color: aliceblue;
 }
 
+.menu .navbar ul {
+    display: flex;
+}
+
 .menu .navbar ul li {
     position: relative;
-    float: left; 
+    float: left;
 }
 
 .menu .navbar ul li a {
@@ -79,17 +81,22 @@ header {
 
 .header-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
 }
 
 .content {
-    padding: 150px 150px 0px 0px;
+    padding: 150px 20px 0px 20px;
+    text-align: center;
 }
 
 .content h1 {
     color: aliceblue;
     font-size: 55px;
     text-transform: uppercase;
-    font-weight: 500px;
+    font-weight: 500;
     line-height: 55px;
 }
 
@@ -101,50 +108,65 @@ header {
     line-height: 40px;
 }
 
-.btn-1 {
+.btn-1,
+.btn-2 {
     display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: white;
+}
+
+.btn-1 {
     background-color: rgba(170, 177, 255, 0.3);
     border: 1px solid rgb(0, 38, 255);
-    margin: 35px 10px 0px 0px;
-    padding: 15px 25px;
-    color: rgb(0, 0, 0);
-    border-radius: 25px;
+    margin: 35px auto 0;
 }
 
 .btn-1:hover {
     background-color: rgb(0, 115, 255);
 }
 
-.Servicios {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
-    text-align:center;
+.btn-2 {
+    background-color: rgb(0, 119, 255);
+}
+
+.btn-2:hover {
+    background-color: rgb(11, 222, 255);
 }
 
 .Servicios {
     padding: 25px;
-    margin: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.Servicio {
+    flex: 1 1 30%;
+    margin: 0 10px;
+    padding: 25px;
     box-shadow: 0px 0px 20px rgba(21, 0, 255, 0.3);
+    margin-bottom: 20px;
 }
 
-.Servicios img {
-    margin-top:-0px;
+.Servicio img {
+    margin-top: -0px;
 }
 
-.Servicios h3 {
+.Servicio h3 {
     font-size: 20px;
     color: #000000;
     margin-bottom: 10px;
 }
 
-.Servicios p{
+.Servicio p {
     color: #ffffff;
     font-size: 16px;
 }
 
 .porfolios {
-    padding: 80px 0px;
+    padding: 80px 20px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
@@ -155,58 +177,34 @@ header {
 
 .porfolio {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.porfolio img{
+.porfolio img {
     width: 350px;
+    margin-bottom: 20px;
 }
 
-.porfolio-1 {
-    text-align: left;
-    margin-left: 100px;
-}
-
-.porfolio-1 h3 {
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
-.porfolio-1 p{
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 25px;
-}
-
+.porfolio-1,
 .porfolio-2 {
-    text-align: left;
-    margin-right: 100px;
+    text-align: center;
 }
 
-.porfolio-2 h3{
+.porfolio-1 h3,
+.porfolio-2 h3 {
     font-size: 35px;
     margin-bottom: 15px;
 }
 
-.porfolio-2 p{
+.porfolio-1 p,
+.porfolio-2 p {
     font-size: 20px;
     color: #ffffff;
     margin-bottom: 25px;
 }
 
-.btn-2 {
-    display: inline-block;
-    padding: 15px 25px;
-    border-radius: 25px;
-    background-color: rgb(0, 119, 255);
-    color: white;
-}
-
-.btn-2:hover {
-    background-color: rgb(11, 222, 255);
-}
-
-footer{
+footer {
     padding: 200px 0px 30px 0px;
     background-image: url(Imagenes/footer.svg);
     background-position: top center;
@@ -216,14 +214,16 @@ footer{
 
 .info-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.info-service{
+.info-service {
     padding: 35px;
     text-align: center;
     background-color: #ffffff;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
-    margin: 0px 150px 0px 0px ;
+    margin: 20px 0;
     color: #000000;
 }
 
@@ -232,7 +232,7 @@ footer{
     margin-bottom: 10px;
 }
 
-.info-service p{
+.info-service p {
     font-size: 16px;
     color: rgb(121, 121, 121);
 }
@@ -249,16 +249,19 @@ hr {
 
 .enlaces {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     color: rgb(255, 255, 255);
 }
 
-.enlaces h3{
+.enlaces h3 {
     font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .enlace {
     display: flex;
+    flex-direction: column;
 }
 
 .enlace li a {
@@ -279,6 +282,7 @@ hr {
     }
 
     .menu .navbar ul {
+        display: none;
         flex-direction: column;
         width: 100%;
     }
@@ -289,85 +293,10 @@ hr {
 
     .menu label {
         display: block;
+        margin-left: 20px;
     }
 
-    #menu:checked + .navbar {
-        display: block;
-    }
-
-    .header-content {
-        align-items: center;
-        text-align: center;
-        padding: 50px 20px;
-    }
-
-    .content {
-        padding: 100px 20px 0px 20px;
-    }
-
-    .content h1 {
-        font-size: 45px;
-        line-height: 50px;
-    }
-
-    .content p {
-        font-size: 25px;
-        line-height: 30px;
-    }
-
-    .Servicios {
-        flex-direction: column;
-    }
-
-    .Servicios > .Servicio {
-        flex: 1 1 100%;
-        margin: 20px 0;
-    }
-
-    .porfolio {
-        flex-direction: column;
-    }
-
-    .porfolio img {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .info-content {
-        flex-direction: column;
-    }
-
-    .info-service {
-        margin: 20px 0;
-        flex: 1 1 100%;
-    }
-
-    .enlaces {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .enlace {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .content h1 {
-        font-size: 35px;
-        line-height: 40px;
-    }
-
-    .content p {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .porfolio-1 h3, .porfolio-2 h3 {
-        font-size: 25px;
-    }
-
-    .porfolio-1 p, .porfolio-2 p {
-        font-size: 16px;
+    #menu:checked + .navbar ul {
+        display: flex;
     }
 }
