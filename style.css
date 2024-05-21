@@ -47,6 +47,23 @@ header {
     color: aliceblue;
 }
 
+.menu ul{
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 36px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
 .menu .navbar ul li {
     position: relative;
     float: left; 
@@ -55,7 +72,7 @@ header {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color: aliceblue;
+    color: rgb(255, 248, 240);
     display: block;
 }
 
@@ -419,7 +436,7 @@ hr {
     transform: scale(1.1);
 }
 
-/* Animaciones */
+
 
 @keyframes slideIn {
     0% {
@@ -520,5 +537,47 @@ img {
     100% {
         opacity: 0;
         transform: translate(100vw, 100vh);
+    }
+}
+
+.porfolio img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    animation: zoomIn 1s ease-out, moveUpDown 3s ease-in-out infinite;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.header-content img {
+    max-width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+    animation: slideIn 1s ease-out, moveUpDown 3s ease-in-out infinite;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.enlace img {
+    width: 150px; 
+    height: auto;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-out, moveUpDown 3s ease-in-out infinite;
+    border-radius: 10px; 
+}
+
+.enlace img:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:1200px) {
+    
+    header {
+        padding: 40px;
     }
 }
